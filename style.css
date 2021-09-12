@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 65rem;
+  margin: 15rem auto;
+  box-shadow: 0px 15px 15px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+}
+
+.first-box {
+  display: flex;
+  grid-column: 1 / -1;
+  background-color: #fff;
+  padding: 4rem 4rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.second-box {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.third-box {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.heading-primary {
+  font-size: 2rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.white {
+  color: hsl(71, 73%, 54%);
+  margin-top: 1.5rem;
+}
+
+.first-box p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: hsl(218, 22%, 67%);
+}
+
+.second-box,
+.third-box {
+  padding: 4rem;
+}
+
+.second-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.65rem;
+}
+
+.price-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.luna {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.acces {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  margin-top: -2rem;
+}
+
+.sign:link,
+.sign:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  display: block;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.third-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.third-box ul {
+  list-style: none;
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 34em) {
+  body {
+    padding: 5rem 3rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .first-box {
+    padding: 3rem 2rem 3rem 2.2rem;
+  }
+
+  .first-box p {
+    font-size: 1.4rem;
+  }
+
+  .second-box,
+  .third-box {
+    padding: 2.2rem;
+  }
+
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+  }
+
+  .luna {
+    font-size: 1.4rem;
+  }
+
+  .acces {
+    font-size: 1.4rem;
+  }
+
+  .third-box ul {
+    font-size: 1.4rem;
+  }
+
+  .sign:link,
+  .sign:visited {
+    font-size: 1.4rem;
+  }
+}
